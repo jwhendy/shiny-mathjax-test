@@ -1,0 +1,35 @@
+```{r}
+library(shiny)
+```
+
+## mathjax test
+
+Document used as is in .Rmd format.
+
+Here's an inline equation with dollar signs: $a + b = c$
+
+Here's an inline equation with slashes/parentheses: \(a + b = c\)
+
+Display format wth double dollar signs:
+
+$$a + b = c$$
+
+Display format with slashes/square brackets:
+
+\[
+a + b = c
+\]
+
+## manually outputting
+
+Tried this block from [here](http://stackoverflow.com/questions/28583101/r-shiny-mathjax-alignment-issue)
+
+```{r results="asis"}
+p("$$\\begin{align}
+     \\ x^2 &=  \\text{Chi-Squared} \\\\
+     \\ sum &= \\text{summation} \\\\
+     \\ o &=  \\text{the observed values} \\\\
+     \\ e &=  \\text{the expected values}
+     \\end{align}$$")
+```
+
